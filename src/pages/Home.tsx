@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import TestImage from "../assets/test-image.png";
 
 export default function Home() {
   return (
@@ -14,8 +15,11 @@ export default function Home() {
           property="og:description"
           content="SEO 최적화 테스트 연습입니다."
         />
-        <meta property="og:image" content="https://via.placeholder.com/1200" />
-        <meta property="og:url" content="https://www.google.com" />
+        <meta property="og:image" content={TestImage} />
+        <meta
+          property="og:url"
+          content="https://seo-optimization-test.netlify.app/"
+        />
         <meta property="og:type" content="website" />
         {/* Twitter */}
         <meta property="twitter:title" content="SEO 최적화 테스트" />
@@ -23,10 +27,7 @@ export default function Home() {
           property="twitter:description"
           content="SEO 최적화 테스트 연습입니다."
         />
-        <meta
-          property="twitter:image"
-          content="https://via.placeholder.com/1200"
-        />
+        <meta property="twitter:image" content={TestImage} />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
       <div>Home</div>

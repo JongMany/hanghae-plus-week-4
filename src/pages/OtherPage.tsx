@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
+import TestImage from "../assets/test-image.png";
 
 export default function OtherPage() {
   const { id } = useParams();
@@ -11,16 +12,16 @@ export default function OtherPage() {
         {/* Open Graph */}
         <meta property="og:title" content={`${id} 페이지`} />
         <meta property="og:description" content={`${id} 페이지`} />
-        <meta property="og:image" content="https://via.placeholder.com/1200" />
-        <meta property="og:url" content="https://www.google.com" />
+        <meta property="og:image" content={TestImage} />
+        <meta
+          property="og:url"
+          content="https://seo-optimization-test.netlify.app/"
+        />
         <meta property="og:type" content="website" />
         {/* Twitter */}
         <meta property="twitter:title" content="동적 파라미터 테스트" />
         <meta property="twitter:description" content={`${id} 페이지`} />
-        <meta
-          property="twitter:image"
-          content="https://via.placeholder.com/1200"
-        />
+        <meta property="twitter:image" content={TestImage} />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
       <h1>{id} Page</h1>
