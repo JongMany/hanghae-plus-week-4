@@ -4,7 +4,7 @@
 
 ## 개발환경 세팅
 
-- fork 후, npm install 해주시면
+- fork 후, npm install 해주시면 될 것 같습니다!
 
 ## SEO 스코어 분석
 
@@ -26,3 +26,8 @@
 - OG 이미지도 페이지에 사용된 이미지로 설정하기
 - 좀 더 다양한 metadata를 사용
 - 동적인 Favicon 사용
+
+- 개선점에 있는 일부분에 대한 SEO 개선 후 스코어 분석
+  <img width="981" alt="스크린샷 2024-04-01 오후 9 17 21" src="https://github.com/JongMany/hanghae-plus-week-4/assets/61236589/b340d2d0-ccf1-45c1-a2be-4539978737ba">
+
+점수가 상향했습니다
