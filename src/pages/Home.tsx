@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import TestImage from "../assets/test-image.png";
 
 export default function Home() {
   return (
@@ -15,7 +14,10 @@ export default function Home() {
           property="og:description"
           content="SEO 최적화 테스트 연습입니다."
         />
-        <meta property="og:image" content={TestImage} />
+        <meta
+          property="og:image"
+          content="https://fastly.picsum.photos/id/344/400/300.jpg?hmac=XxhRgUM7_wftSba_ilWJuQcRl1X8kBFZKOIwETXPKRs"
+        />
         <meta
           property="og:url"
           content="https://seo-optimization-test.netlify.app/"
@@ -27,10 +29,19 @@ export default function Home() {
           property="twitter:description"
           content="SEO 최적화 테스트 연습입니다."
         />
-        <meta property="twitter:image" content={TestImage} />
+        <meta
+          property="twitter:image"
+          content="https://fastly.picsum.photos/id/344/400/300.jpg?hmac=XxhRgUM7_wftSba_ilWJuQcRl1X8kBFZKOIwETXPKRs"
+        />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
       <div>Home</div>
+      <img
+        src="https://fastly.picsum.photos/id/344/400/300.jpg?hmac=XxhRgUM7_wftSba_ilWJuQcRl1X8kBFZKOIwETXPKRs"
+        alt="test"
+        width="300px"
+        height="300px"
+      />
       <Link to="/counter">Counter</Link>
     </>
   );
